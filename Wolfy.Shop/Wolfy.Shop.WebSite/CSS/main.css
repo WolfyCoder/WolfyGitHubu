@@ -1,0 +1,26 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    border: 1px solid #0094ff;
+    margin: 50px auto;
+    width: 600px;
+}
+
+.table {
+    border: 1px solid #0094ff;
+    border-collapse: collapse;
+    width: 98%;
+    text-align: center;
+    margin: 5px auto;
+}
+
+    .table th {
+        background-color: lightgray;
+    }
+
+    .table tr td {
+        border: 1px solid #0094ff;
+    }

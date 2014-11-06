@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--assembly:程序集，namespace:命名空间-->
+<hibernate-mapping  xmlns="urn:nhibernate-mapping-2.2" assembly="Wolfy.Shop.Domain"  namespace="Wolfy.Shop.Domain.Entities">
+  <class name="Wolfy.Shop.Domain.Entities.Customer,Wolfy.Shop.Domain" table="TB_Customer">
+    <!--主键-->
+    <id name="CustomerID" type="Guid" unsaved-value="null">
+      <column name="CustomerID" sql-type="uniqueidentifier" not-null="true" unique="true"/>
+      <generator class="assigned"></generator>
+    </id>
+    <!--版本控制-->
+    <version name="Version" column="Version" type="integer"  unsaved-value="0"/>
+    <!--组件 name组件属性名-->
+    <component name="NameAddress" class="Wolfy.Shop.Domain.Entities.Name,Wolfy.Shop.Domain" lazy="true">
+      <!--Name类中的属性property-->
+      <property name="CustomerName" column ="CustomerName" type="string"
+                           length="16" not-null="false" />
+      <property name ="CustomerAddress" column="CustomerAddress" type="string"
+                           length="128" not-null="false" />
+    </component>
+    <!--一对多关系:一个客户可以有一个或者多个订单-->
+    <!--子实体负责维护关联关系-->
+    <set name="Orders" table="TB_Order" generic="true" inverse="true" cascade="all" lazy="true">
+      <key column="CustomerID" foreign-key="FK_TB_Order_TB_Customer"></key>
+      <one-to-many class="Wolfy.Shop.Domain.Entities.Order,Wolfy.Shop.Domain"/>
+    </set>
+  </class>
+</hibernate-mapping>

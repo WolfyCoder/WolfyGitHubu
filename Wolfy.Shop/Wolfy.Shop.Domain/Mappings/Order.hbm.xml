@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Wolfy.Shop.Domain"  namespace="Wolfy.Shop.Domain.Entities">
+  <class name="Wolfy.Shop.Domain.Entities.Order,Wolfy.Shop.Domain" table="TB_Order">
+    <id name="OrderID" column="OrderID" type="Guid" unsaved-value="null">
+      <generator class="assigned" />
+    </id>
+    <property name="OrderDate" column="OrderDate" type="DateTime"
+              not-null="true" />
+    <!--多对一关系：Orders属于一个Customer-->
+    <many-to-one  name="Customer" column="CustomerID" not-null="true" lazy="proxy"
+                 class="Wolfy.Shop.Domain.Entities.Customer,Wolfy.Shop.Domain"
+                 foreign-key="FK_TB_Order_TB_Customer" />
+    <!--多对多关系：order下有多个product-->
+    <bag name="Products" generic="true" table="TB_OrderProduct" lazy="true">
+      <key column="OrderID"  foreign-key="FK_TB_OrderProduct_TB_Order"/>
+      <many-to-many   column="ProductID" class="Wolfy.Shop.Domain.Entities.Product,Wolfy.Shop.Domain"
+     foreign-key="FK_TB_OrderProduct_TB_Product"/>
+
+    </bag>
+  </class>
+</hibernate-mapping>

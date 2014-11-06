@@ -1,0 +1,14 @@
+F:\SUN.TEST\Wolfy.Shop\Wolfy.Shop.Domain\bin\Debug\Wolfy.Shop.Domain.dll
+F:\SUN.TEST\Wolfy.Shop\Wolfy.Shop.Domain\bin\Debug\Wolfy.Shop.Domain.pdb
+F:\SUN.TEST\Wolfy.Shop\Wolfy.Shop.Domain\obj\Debug\Wolfy.Shop.Domain.csprojResolveAssemblyReference.cache
+F:\SUN.TEST\Wolfy.Shop\Wolfy.Shop.Domain\obj\Debug\Wolfy.Shop.Domain.dll
+F:\SUN.TEST\Wolfy.Shop\Wolfy.Shop.Domain\obj\Debug\Wolfy.Shop.Domain.pdb
+D:\BaiduYunDownload\Wolfy.Shop\Wolfy.Shop.Domain\bin\Debug\Wolfy.Shop.Domain.dll
+D:\BaiduYunDownload\Wolfy.Shop\Wolfy.Shop.Domain\bin\Debug\Wolfy.Shop.Domain.pdb
+D:\BaiduYunDownload\Wolfy.Shop\Wolfy.Shop.Domain\obj\Debug\Wolfy.Shop.Domain.dll
+D:\BaiduYunDownload\Wolfy.Shop\Wolfy.Shop.Domain\obj\Debug\Wolfy.Shop.Domain.pdb
+F:\MyGitHub\Wolfy.Shop\Wolfy.Shop.Domain\bin\Debug\Wolfy.Shop.Domain.dll
+F:\MyGitHub\Wolfy.Shop\Wolfy.Shop.Domain\bin\Debug\Wolfy.Shop.Domain.pdb
+F:\MyGitHub\Wolfy.Shop\Wolfy.Shop.Domain\obj\Debug\Wolfy.Shop.Domain.csprojResolveAssemblyReference.cache
+F:\MyGitHub\Wolfy.Shop\Wolfy.Shop.Domain\obj\Debug\Wolfy.Shop.Domain.dll
+F:\MyGitHub\Wolfy.Shop\Wolfy.Shop.Domain\obj\Debug\Wolfy.Shop.Domain.pdb
